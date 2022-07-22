@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+#browser.win {
+	font-family: 'Roboto', sans-serif !important;
+}
+body {
+	font-family: 'Roboto', sans-serif !important;
+}
+#titlebar {
+	font-family: 'Roboto', sans-serif !important;
+	position: relative !important;
+	height: 22px !important;
+	width: 100% !important;
+}
+#tabs-tabbar-container {
+    height: 100% !important;
+}
+div#tabs-container {
+    /*height: 100% !important;*/
+	padding-top: 0px !important;
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+	flex: none !important;
+}
+div#tabs-subcontainer {
+	flex-basis: 0 !important;
+}
+.tab-position {
+	margin-left: 1px !important;
+    display: inline-block !important;
+    position: relative;
+    --PositionX: 0 !important;
+    --PositionY: 0 !important;
+    --Width: 240px !important;
+    --Height: 30px !important;
+    height: 30px !important;
+}
+
+.tab-position .tab {
+    min-width: 240px !important;
+    --Height: 30px !important;
+    height: 30px !important;
+	font-size: 15px !important;
+}
+.tab.active {
+	background-color: #080808 !important;
+}
+.tab-position .tab .tab-header {}
+.addressfield.focused, .searchfield.focused{ 
+	box-shadow: none !important;
+}
+.tab-position .tab .favicon, .tab-position .tab .close {
+	margin: 2px !important;
+}
+.tab-position .tab.active .tab-header .favicon {
+	background-color: var(--colorFg) !important;
+}
+.button-tabbar {
+	width: 240px !important;
+	height: 20px !important;
+	min-width: 240px !important;
+	min-height: 20px !important;
+	margin: 2px !important;
+	top: 0px !important;
+}
+.toolbar.toolbar-tabbar.toolbar-large {
+	--Width: 30px !important;
+	--Height: 30px !important;
+}
+.button-toolbar {
+	vertical-align: sub !important;
+}
+#tabs-container .newtab {
+	margin: 2px !important;
+    display: inline-block;
+    --PositionX: 0 !important;
+    --PositionY: 0 !important;
+    top: 0 !important;
+	left: 0 !important;
+}
+.button-toolbar.newtab {
+	margin: 2px !important;
+    display: inline-block;
+    --PositionX: 0 !important;
+    --PositionY: 0 !important;
+    top: 0 !important;
+	left: 0 !important;
+}
+button.vivaldi{
+	width: 22px !important;
+	height: 22px !important;
+	z-index: 20;
+}
+.synced-tabs-button,
+.toggle-trash,
+.sync-and-trash-container {
+	display: inline-block !important;
+	margin-top: 0 !important;
+}
+
+/** /
+Mac Colors: 
+
+Close Color: #EB5A55
+Minimize Color: #F6BC3D
+Maximize Color: #64CC44
+/**/
+button.close {
+	background-color: transparent !important;
+	border-radius: 50%;
+}
+button.close:hover {
+	background-color: transparent !important;
+}
+button.close:hover svg path {
+	fill: #993936 !important;
+}
+button.close svg path {
+	d: path('M2,8a6,6 0 1,0 12,0a6,6 0 1,0 -12,0');
+	fill: #f85953;
+}
+.window-buttongroup {
+	margin-top: 5px;
+}
+.window-buttongroup > button {
+	margin-right: 15px !important;
+}
+button.window-maximize,
+button.window-minimize,
+button.window-close {
+	border-radius: 50% !important;
+	height: 13px !important;
+	width: 13px !important;
+}
+button.window-maximize {
+	background-color: #64CC44 !important;
+}
+button.window-maximize:hover {
+	background-color: #489630 !important;
+}
+button.window-minimize {
+	background-color: #F6BC3D !important;
+}
+button.window-minimize:hover {
+	background-color: #a38035 !important;
+}
+button.window-close {
+	background-color: #EB5A55 !important;
+}
+button.window-close:hover {
+	background-color: #993936 !important;
+}
+button.window-maximize svg,
+button.window-minimize svg,
+button.window-close svg {
+	height: 20px !important;
+	width: 20px !important;
+}
+button.window-minimize svg path {
+	d: path('');
+}
+button.window-maximize svg path {
+	d: path('');
+}
+button.window-close svg path {
+	d: path('');
+}
+#browser ::-webkit-scrollbar { width: 8px; }
+#browser ::-webkit-scrollbar-thumb { background-color: var(--colorAccentBg); }
+#browser ::-webkit-scrollbar-thumb:hover { background-color: var(--colorHighlightBg); }
