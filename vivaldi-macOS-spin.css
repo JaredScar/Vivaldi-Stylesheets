@@ -27,8 +27,13 @@ div#tabs-container {
 	*/
 	--uiZoomLevel: unset !important;
 }
-div#tabs-container.button-toolbar {
-	height: 100%;
+div#tabs-container .button-toolbar {
+	max-width: 200px !important;
+	height: 100% !important;
+	flex-direction: column !important;
+}
+div#tabs-container .button-toolbar button {
+	flex-grow: 1 !important;
 }
 div#tabs-container .button-icon .audioicon {
 	display: none;
